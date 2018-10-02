@@ -1,0 +1,41 @@
+<html>
+    <head>
+          <title>Weclome!</title>
+          <link href="style.css" rel="stylesheet" type="text/css"/>
+          <script type="text/javascript"
+                  src="formChecker.js">
+          </script>
+    </head>
+    <body>
+      <form  action="customerBackend.php" method="post" onsubmit="return compare()">
+          <div>
+            <h1 class="subtitle" >
+            Login
+            </h1>
+            UserName:<input type="text" name="username" value="" id="user"><br>
+            PassWord:<input type="text" name="password" value="" id="pass"><br>
+          </div>
+
+          <div>
+            <h1 class="subtitle" >
+            Shopping Cart
+            </h1>
+            <input type="text" name="Pepsi"  value="" id="Pepsi">Pepsi: 2.5$/tin<br>
+            <input type="text" name="Beef"  value="" id="Beef">Beef: 10$/pound<br>
+            <input type="text" name="Chicken"  value="" id="Chicken">Chicken: 5$/pound<br>
+          </div>
+
+          <div>
+            <h1 class="subtitle" >
+            Shipping Method
+          </h1>
+          <input type="radio" name="Ship" value="0" checked>Free 7 Day<br>
+          <input type="radio" name="Ship" value="5">$5.00 3 Day<br>
+          <input type="radio" name="Ship" value="50">$50.00 Overnight<br>
+          </div>
+          <input type="submit" value="Submit">
+            <input type="reset">
+
+          </form>
+    </body>
+</html>
